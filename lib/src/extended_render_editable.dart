@@ -1866,7 +1866,8 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
         showCaret = true;
       else if (!actualSelection.isCollapsed && _selectionColor != null)
         showSelection = true;
-      _updateSelectionExtentsVisibility(effectiveOffset, actualSelection);
+      //todo 报错 zhq
+//      _updateSelectionExtentsVisibility(effectiveOffset, actualSelection);
     }
     if (showSelection) {
       _selectionRects ??= _textPainter.getBoxesForSelection(actualSelection);
