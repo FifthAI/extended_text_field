@@ -1,7 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c882ed1a-dbfa-49e3-91ad-acef2006135f" name="Default Changelist" comment="" />
+    <list default="true" id="c882ed1a-dbfa-49e3-91ad-acef2006135f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/extended_text_field-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README-ZH.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/java/com/zmtzawqlp/example/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/assets/flutter_candies_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/main.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/common/my_extended_text_selection_controls.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/common/pic_swiper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/common/toggle_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/common/tu_chong_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/common/tu_chong_source.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/example_route.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/example_route_helper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/pages/custom_toolbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/pages/main_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/pages/no_route.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/pages/text_demo.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/pages/widget_span.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/at_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/dollar_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/email_span_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/email_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/emoji_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/image_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/lib/special_text/my_special_text_span_builder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extended_text_field.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/extended_text_field.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/extended_editable_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/extended_render_editable.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/extended_text_field.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +170,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/extended_editable_text.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="758" column="3" lean-forward="true" selection-start-line="758" selection-start-column="3" selection-end-line="758" selection-end-column="3" />
+            <state relative-caret-position="339">
+              <caret line="756" column="23" selection-start-line="756" selection-start-column="7" selection-end-line="756" selection-end-column="23" />
               <folding>
                 <element signature="e#0#66390#0" expanded="true" />
               </folding>
@@ -32,6 +180,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,6 +196,7 @@
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -150,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/extended_editable_text.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="758" column="3" lean-forward="true" selection-start-line="758" selection-start-column="3" selection-end-line="758" selection-end-column="3" />
+        <state relative-caret-position="339">
+          <caret line="756" column="23" selection-start-line="756" selection-start-column="7" selection-end-line="756" selection-end-column="23" />
           <folding>
             <element signature="e#0#66390#0" expanded="true" />
           </folding>

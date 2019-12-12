@@ -758,6 +758,7 @@ class ExtendedEditableTextState extends State<ExtendedEditableText>
 
   }
   @override
+
   void initState() {
     super.initState();
     widget.controller.addListener(_didChangeTextEditingValue);
