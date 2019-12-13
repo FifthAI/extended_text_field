@@ -160,6 +160,7 @@ class _TextDemoState extends State<TextDemo> {
             maxLines: null,
             focusNode: _focusNode,
             decoration: InputDecoration(
+              hintText: "中国字er",
                 suffixIcon: GestureDetector(
                   onTap: () {
                     setState(() {

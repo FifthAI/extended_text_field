@@ -1168,21 +1168,14 @@ class ExtendedEditableTextState extends State<ExtendedEditableText>
         _value = value;
       }
     }
-    widget.controller.selection = selection;
-
-    // This will show the keyboard for all selection changes on the
-    // EditableWidget, not just changes triggered by user gestures.
+    //todo zhq 报错
+//    widget.controller.selection = selection;
     requestKeyboard();
-
     _hideSelectionOverlayIfNeeded();
 
     if (widget.selectionControls != null) {
       createSelectionOverlay(renderObject: renderObject);
 
-//      final bool longPress = cause == SelectionChangedCause.longPress;
-//      if (cause != SelectionChangedCause.keyboard &&
-//          (_value.text.isNotEmpty || longPress))
-//        _selectionOverlay.showHandles();
 
       if (widget.onSelectionChanged != null)
         widget.onSelectionChanged(selection, cause);
@@ -1643,6 +1636,7 @@ class ExtendedEditableTextState extends State<ExtendedEditableText>
     }
 
     String text = _value.text;
+    print("text === $text");
     if (widget.obscureText) {
       text = RenderEditable.obscuringCharacter * text.length;
       final int o =

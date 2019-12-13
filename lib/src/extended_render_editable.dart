@@ -185,6 +185,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
 
   bool supportSpecialText = false;
   bool _handleSpecialText = false;
+
   bool get handleSpecialText => supportSpecialText && _handleSpecialText;
 
   /// Character used to obscure text if [obscureText] is true.
@@ -217,6 +218,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// Should be obtained by querying MediaQuery for the devicePixelRatio.
   double get devicePixelRatio => _devicePixelRatio;
   double _devicePixelRatio;
+
   set devicePixelRatio(double value) {
     if (devicePixelRatio == value) return;
     _devicePixelRatio = value;
@@ -226,6 +228,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// Whether to hide the text being edited (e.g., for passwords).
   bool get obscureText => _obscureText;
   bool _obscureText;
+
   set obscureText(bool value) {
     if (_obscureText == value) return;
     _obscureText = value;
@@ -278,7 +281,6 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
     ///
 
     final Rect visibleRegion = Offset(0.0, _visibleRegionMinY) & size;
-
     final Offset startOffset = getCaretOffset(
       TextPosition(
         offset: selection.start,
@@ -288,21 +290,16 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
       caretPrototype: _caretPrototype,
       handleSpecialText: handleSpecialText,
     );
-
-    // TODO(justinmc): https://github.com/flutter/flutter/issues/31495
-    // Check if the selection is visible with an approximation because a
-    // difference between rounded and unrounded values causes the caret to be
-    // reported as having a slightly (< 0.5) negative y offset. This rounding
-    // happens in paragraph.cc's layout and TextPainer's
-    // _applyFloatingPointHack. Ideally, the rounding mismatch will be fixed and
-    // this can be changed to be a strict check instead of an approximation.
     const double visibleRegionSlop = 0.5;
     _selectionStartInViewport.value = visibleRegion
         .inflate(visibleRegionSlop)
         .contains(startOffset + effectiveOffset);
 
     final Offset endOffset = getCaretOffset(
-      TextPosition(offset: selection.end, affinity: selection.affinity),
+      TextPosition(
+        offset: selection.end,
+        affinity: selection.affinity,
+      ),
       effectiveOffset: effectiveOffset,
       caretPrototype: _caretPrototype,
       handleSpecialText: handleSpecialText,
@@ -629,6 +626,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// The text to display.
   InlineSpan get text => _textPainter.text;
   final TextPainter _textPainter;
+
   set text(InlineSpan value) {
     if (_textPainter.text == value) return;
     _textPainter.text = value;
@@ -642,6 +640,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   ///
   /// This must not be null.
   TextAlign get textAlign => _textPainter.textAlign;
+
   set textAlign(TextAlign value) {
     assert(value != null);
     if (_textPainter.textAlign == value) return;
@@ -663,6 +662,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   ///
   /// This must not be null.
   TextDirection get textDirection => _textPainter.textDirection;
+
   set textDirection(TextDirection value) {
     assert(value != null);
     if (_textPainter.textDirection == value) return;
@@ -682,6 +682,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// If this value is null, a system-dependent algorithm is used to select
   /// the font.
   Locale get locale => _textPainter.locale;
+
   set locale(Locale value) {
     if (_textPainter.locale == value) return;
     _textPainter.locale = value;
@@ -691,6 +692,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// The [StrutStyle] used by the renderer's internal [TextPainter] to
   /// determine the strut to use.
   StrutStyle get strutStyle => _textPainter.strutStyle;
+
   set strutStyle(StrutStyle value) {
     if (_textPainter.strutStyle == value) return;
     _textPainter.strutStyle = value;
@@ -700,6 +702,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// The color to use when painting the cursor.
   Color get cursorColor => _cursorColor;
   Color _cursorColor;
+
   set cursorColor(Color value) {
     if (_cursorColor == value) return;
     _cursorColor = value;
@@ -712,6 +715,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// The default is light grey.
   Color get backgroundCursorColor => _backgroundCursorColor;
   Color _backgroundCursorColor;
+
   set backgroundCursorColor(Color value) {
     if (backgroundCursorColor == value) return;
     _backgroundCursorColor = value;
@@ -721,6 +725,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// Whether to paint the cursor.
   ValueNotifier<bool> get showCursor => _showCursor;
   ValueNotifier<bool> _showCursor;
+
   set showCursor(ValueNotifier<bool> value) {
     assert(value != null);
     if (_showCursor == value) return;
@@ -734,6 +739,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   bool get hasFocus => _hasFocus;
   bool _hasFocus = false;
   bool _listenerAttached = false;
+
   set hasFocus(bool value) {
     assert(value != null);
     if (_hasFocus == value) return;
@@ -786,6 +792,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// {@macro flutter.widgets.editableText.expands}
   bool get expands => _expands;
   bool _expands;
+
   set expands(bool value) {
     assert(value != null);
     if (expands == value) return;
@@ -796,6 +803,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// The color to use when painting the selection.
   Color get selectionColor => _selectionColor;
   Color _selectionColor;
+
   set selectionColor(Color value) {
     if (_selectionColor == value) return;
     _selectionColor = value;
@@ -807,6 +815,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// For example, if the text scale factor is 1.5, text will be 50% larger than
   /// the specified font size.
   double get textScaleFactor => _textPainter.textScaleFactor;
+
   set textScaleFactor(double value) {
     assert(value != null);
     if (_textPainter.textScaleFactor == value) return;
@@ -817,11 +826,23 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   List<ui.TextBox> _selectionRects;
 
   /// The region of text that is selected, if any.
-  TextSelection get selection => _selection;
+//  TextSelection get selection => _selection;
+  TextSelection get selection{
+    return _selection;
+  }
   TextSelection _selection;
+
   set selection(TextSelection value) {
-    if (_selection == value) return;
+    if (_selection == value){
+      if(_selection.affinity == null){
+        _selection = TextSelection(baseOffset: value.baseOffset, extentOffset: value.extentOffset,affinity: TextAffinity.upstream,isDirectional: _selection.isDirectional);
+      }
+      return;
+    }
     _selection = value;
+    if(_selection.affinity == null){
+      _selection = TextSelection(baseOffset: value.baseOffset, extentOffset: value.extentOffset,affinity: TextAffinity.upstream,isDirectional: _selection.isDirectional);
+    }
     _selectionRects = null;
     markNeedsPaint();
     markNeedsSemanticsUpdate();
@@ -834,6 +855,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// visible by shifting the text by the given offset before clipping.
   ViewportOffset get offset => _offset;
   ViewportOffset _offset;
+
   set offset(ViewportOffset value) {
     assert(value != null);
     if (_offset == value) return;
@@ -846,6 +868,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// How thick the cursor will be.
   double get cursorWidth => _cursorWidth;
   double _cursorWidth = 1.0;
+
   set cursorWidth(double value) {
     if (_cursorWidth == value) return;
     _cursorWidth = value;
@@ -860,6 +883,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// {@endtemplate}
   bool get paintCursorAboveText => _paintCursorOnTop;
   bool _paintCursorOnTop;
+
   set paintCursorAboveText(bool value) {
     if (_paintCursorOnTop == value) return;
     _paintCursorOnTop = value;
@@ -876,6 +900,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// {@endtemplate}
   Offset get cursorOffset => _cursorOffset;
   Offset _cursorOffset;
+
   set cursorOffset(Offset value) {
     if (_cursorOffset == value) return;
     _cursorOffset = value;
@@ -885,6 +910,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// How rounded the corners of the cursor should be.
   Radius get cursorRadius => _cursorRadius;
   Radius _cursorRadius;
+
   set cursorRadius(Radius value) {
     if (_cursorRadius == value) return;
     _cursorRadius = value;
@@ -897,6 +923,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// Defaults to a padding with left, top and right set to 4, bottom to 5.
   EdgeInsets get floatingCursorAddedMargin => _floatingCursorAddedMargin;
   EdgeInsets _floatingCursorAddedMargin;
+
   set floatingCursorAddedMargin(EdgeInsets value) {
     if (_floatingCursorAddedMargin == value) return;
     _floatingCursorAddedMargin = value;
@@ -913,6 +940,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   /// True by default.
   bool get enableInteractiveSelection => _enableInteractiveSelection;
   bool _enableInteractiveSelection;
+
   set enableInteractiveSelection(bool value) {
     if (_enableInteractiveSelection == value) return;
     _enableInteractiveSelection = value;
@@ -1867,7 +1895,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
       else if (!actualSelection.isCollapsed && _selectionColor != null)
         showSelection = true;
       //todo 报错 zhq
-//      _updateSelectionExtentsVisibility(effectiveOffset, actualSelection);
+      _updateSelectionExtentsVisibility(effectiveOffset, actualSelection);
     }
     if (showSelection) {
       _selectionRects ??= _textPainter.getBoxesForSelection(actualSelection);
@@ -1914,6 +1942,7 @@ class ExtendedRenderEditable extends ExtendedTextRenderBox
   }
 
   Offset _initialOffset;
+
   Offset get _effectiveOffset => (_initialOffset ?? Offset.zero) + _paintOffset;
 
   @override

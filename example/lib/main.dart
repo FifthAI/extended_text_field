@@ -12,9 +12,11 @@ import 'package:oktoast/oktoast.dart';
 
 import 'common/tu_chong_repository.dart';
 import 'package:example/pages/custom_toolbar.dart';
+import 'chinese_cupertino_localizations.dart';
 
 import 'example_route.dart';
 import 'example_route_helper.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,9 +34,14 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
       title: 'extended text field demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+            theme: ThemeData( backgroundColor: Colors.white,
+                textTheme: TextTheme( subhead: TextStyle(textBaseline: TextBaseline.alphabetic ) ) ),
+            localizationsDelegates: [
+//    S.delegate,
+              GlobalMaterialLocalizations.delegate, GlobalWidgetsLocalizations.delegate, ChineseCupertinoLocalizations.delegate,
+            ],
+            // 国际化支持
+            supportedLocales: [const Locale( 'en', 'US' ), const Locale( 'zh', 'CN' )],
       navigatorObservers: [
         FFNavigatorObserver(routeChange: (name) {
           //you can track page here
