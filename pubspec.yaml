@@ -11,8 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   extended_text_library:
-    git:
-      url: git@github.com:FifthAI/extended_text_library.git
+    path: ../extended_text_library
 
 
 dev_dependencies:
